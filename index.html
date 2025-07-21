@@ -1,0 +1,36 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; class=&quot;scroll-smooth&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Bestcobb Sports Bar &amp; Grill - Online Order&lt;/title&gt;
+    &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;!-- Chosen Palette: Warm Neutral (Tusk, Slate Gray, Sage Green) --&gt;
+    &lt;!-- Application Structure Plan: The application is structured into a two-column responsive layout to guide the user through a natural ordering flow. The left column displays the menu, allowing for easy Browse and selection. The right column contains the dynamic order summary and customer details form, which remains visible as the user scrolls. This structure was chosen to provide immediate feedback (updating the order summary) and reduce user effort by keeping the cart and checkout process in a consistent location, following a logical &quot;select -&gt; review -&gt; checkout&quot; user journey. --&gt;
+    &lt;!-- Visualization &amp; Content Choices: The source &quot;report&quot; is the ordering process for a restaurant. The goal is transactional: allow users to efficiently build and place an order. Presentation Method: Menu items are presented as interactive cards instead of a dropdown to improve browsability and visual appeal. The order summary is a dynamic list. Interaction: Users click &#39;Add&#39; on cards, can adjust quantity directly in the summary, and fill out a standard form. Justification: This approach is more engaging than a simple form and provides clearer, real-time feedback. No charts/graphs (e.g., Chart.js) are used, as this is a transactional application, not a data analysis report. Library/Method: Vanilla JavaScript for all interactions, Tailwind CSS for layout. --&gt;
+    &lt;!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. --&gt;
+    &lt;style&gt;
+        body {
+            font-family: &#39;Inter&#39;, sans-serif;
+            background-color: #FBF9F1; /* Tusk - warm neutral */
+        }
+        .title-font {
+            font-family: &#39;Poppins&#39;, sans-serif;
+        }
+        .sticky-summary {
+            position: sticky;
+            top: 2rem;
+        }
+        .item-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        #notification {
+            transition: opacity 0.5s, transform 0.5s;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body class=&quot;text-gray-800&quot;&gt;
